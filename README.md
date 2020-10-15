@@ -70,7 +70,7 @@ Issue the below commands in project root directory
 ```
 python3 -m unittest testAll.TestContact.TEST_NAME
 ```
-_Example: python3 -m unittest testAll.TestContact.test_send_message_with_empty_text
+_Example: python3 -m unittest testAll.TestContact.test_send_message_with_empty_text_
 
 By default it runs in Chrome browser, you can specify which browser to use as well running from testAllFirefox.py instead testAll.py.
 The webdrivers were set to run headless, if need to watch the execution, please, comment the line 11 on testAll.py or testAllFirefox.py.
