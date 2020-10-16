@@ -113,7 +113,7 @@ The webdrivers were set to run headless, if need to watch the execution, please,
 |                                                                      |        2. Select any subject heading option.                    |                               2. Selection is updated.                                    |
 |                                                                      |            3. Insert 'test@test.com' in Email address field.    |                              3. The email is validated and accepted.                      |
 |                                                                      |              4. Insert 'Test' in Message box field.             |                              4. The field receives the input.                             |
-|                                                                      |                    5. Click on 'Send' button                    | 5. The message is not sent and some warning is presented asking to user insert a order. |
+|                                                                      |                    5. Click on 'Send' button                    | 5. The message is sent and a successfull message is presented to the user. |
 
 
 #### TC05 - Validate the email address field for different inputs
