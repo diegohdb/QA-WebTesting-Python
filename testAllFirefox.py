@@ -39,6 +39,14 @@ class TestContact(TestContactBase):
         self.contact.click(ContactPageLocators.SEND_BUTTON)
         self.contact.assert_elem_text(ContactPageLocators.ALERT_MSG, 'Invalid email address.')
 
+    def test_send_message_no_order(self):
+        self.contact.choose(ContactPageLocators.SUBJECT_SELECTION, self.contact.default_subject)
+        self.contact.send_text(ContactPageLocators.EMAIL, self.contact.default_email)
+        self.contact.send_text(ContactPageLocators.MESSAGE, self.contact.default_message)
+        self.contact.click(ContactPageLocators.SEND_BUTTON)
+        self.contact.assert_elem_text(ContactPageLocators.ALERT_MSG_SEND,
+                                      'Your message has been successfully sent to our team.')
+
     def test_email_validation(self):
         invalid_email = ['Abc.example.com', 'A@b@c@example.com', '****asd@example.com',
                          'just""""not""""right@example.com', 'this is""""not\\allowed@example.com',

@@ -1,5 +1,5 @@
 import unittest
-from testAll import TestContact
+from testAllFirefox import TestContact
 
 
 def suite():
@@ -8,6 +8,7 @@ def suite():
     suite.addTest(TestContact('test_send_message_with_empty_text'))
     suite.addTest(TestContact('test_send_message_no_subject_selected'))
     suite.addTest(TestContact('test_send_message_no_email'))
+    suite.addTest(TestContact('test_send_message_no_order'))
     suite.addTest(TestContact('test_email_validation'))
     suite.addTest(TestContact('test_attachment_less_than_limit'))
     suite.addTest(TestContact('test_attachment_greater_than_limit'))
