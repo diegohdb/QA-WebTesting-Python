@@ -110,10 +110,10 @@ The webdrivers were set to run headless, if need to watch the execution, please,
 |                             Preconditions                            |                              Steps                              |                                      Expected Results                                     |
 |:--------------------------------------------------------------------:|:---------------------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
 | 1. Access to http://automationpractice.com/index.php via web browser | 1. On home page, click on 'Contact Us' button on the top right. |                               1. Customer service is loaded.                              |
-|                                                                      |        2. Insert 'test@test.com' in Email address field.        |                          2. The email is validated and accepted.                          |
-|                                                                      |            3. Insert 'Test' in Order reference field.           |                              3. The field receives the input.                             |
+|                                                                      |        2. Select any subject heading option.                    |                               2. Selection is updated.                                    |
+|                                                                      |            3. Insert 'test@test.com' in Email address field.    |                              3. The email is validated and accepted.                      |
 |                                                                      |              4. Insert 'Test' in Message box field.             |                              4. The field receives the input.                             |
-|                                                                      |                    5. Click on 'Send' button                    | 5. The message is not sent and some warning is presented asking to user choose a subject. |
+|                                                                      |                    5. Click on 'Send' button                    | 5. The message is not sent and some warning is presented asking to user insert a order. |
 
 
 #### TC05 - Validate the email address field for different inputs
